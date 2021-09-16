@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_example/pages/colors.dart';
 import 'package:flutter_example/pages/parallax.dart';
 
 void main() {
@@ -42,6 +43,9 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             ListTile(title: Text("视差"),onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context)=>ZHParallax())); 
+            }),
+            ListTile(title: Text("取色"),onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ZHColors())); 
             })
           ],
         ),
